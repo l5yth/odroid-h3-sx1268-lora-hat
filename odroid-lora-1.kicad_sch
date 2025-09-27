@@ -2324,23 +2324,27 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Mechanical:MountingHole"
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 1.016)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom no)
 			(on_board yes)
 			(property "Reference" "H"
-				(at 0 5.08 0)
+				(at 0 6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "MountingHole"
-				(at 0 3.175 0)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2365,7 +2369,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Mounting Hole without connection"
+			(property "Description" "Mounting Hole with connection"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2383,7 +2387,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "MountingHole*"
+			(property "ki_fp_filters" "MountingHole*Pad*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2392,9 +2396,9 @@
 					(hide yes)
 				)
 			)
-			(symbol "MountingHole_0_1"
+			(symbol "MountingHole_Pad_0_1"
 				(circle
-					(center 0 0)
+					(center 0 1.27)
 					(radius 1.27)
 					(stroke
 						(width 1.27)
@@ -2402,6 +2406,26 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
 				)
 			)
@@ -2522,6 +2546,12 @@
 		(uuid "1edcf459-47e2-4302-8180-261df91f83c7")
 	)
 	(junction
+		(at 147.32 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "094ac336-2a0c-47e7-b8f9-eb96d42713fa")
+	)
+	(junction
 		(at 152.4 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2574,6 +2604,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4a9e0628-6936-409e-a413-d4401d286325")
+	)
+	(junction
+		(at 168.91 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "50d4f7f5-7809-4b1d-be99-d68708716a6a")
 	)
 	(junction
 		(at 148.59 66.04)
@@ -2636,6 +2672,12 @@
 		(uuid "aed9ce6f-6e04-430c-b8dd-23420331ca90")
 	)
 	(junction
+		(at 168.91 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c856c88f-5889-46e4-95fa-0f787fb794bd")
+	)
+	(junction
 		(at 144.78 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2693,7 +2735,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 101.6) (xy 168.91 90.17)
+			(xy 168.91 101.6) (xy 168.91 97.79)
 		)
 		(stroke
 			(width 0)
@@ -2933,7 +2975,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 66.04) (xy 148.59 66.04)
+			(xy 144.78 66.04) (xy 147.32 66.04)
 		)
 		(stroke
 			(width 0)
@@ -3040,6 +3082,16 @@
 			(type default)
 		)
 		(uuid "5bccaa54-1d9e-4ce2-a96d-69b502769f37")
+	)
+	(wire
+		(pts
+			(xy 168.91 97.79) (xy 177.8 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ee92d44-41a6-4dae-8c3b-500eb3f16e2b")
 	)
 	(wire
 		(pts
@@ -3243,6 +3295,16 @@
 	)
 	(wire
 		(pts
+			(xy 168.91 105.41) (xy 177.8 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8bf9bb78-288e-4c8f-8d35-c27e855ecacf")
+	)
+	(wire
+		(pts
 			(xy 124.46 66.04) (xy 124.46 59.69)
 		)
 		(stroke
@@ -3373,6 +3435,16 @@
 	)
 	(wire
 		(pts
+			(xy 147.32 86.36) (xy 147.32 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac075967-aeb7-4d36-b47d-bf095c7905cf")
+	)
+	(wire
+		(pts
 			(xy 181.61 77.47) (xy 181.61 78.74)
 		)
 		(stroke
@@ -3380,6 +3452,16 @@
 			(type default)
 		)
 		(uuid "ac819390-c4fe-4b85-ab49-9272bd2f65f0")
+	)
+	(wire
+		(pts
+			(xy 168.91 97.79) (xy 168.91 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae110bcc-01af-40c6-a15c-5c70f31ec313")
 	)
 	(wire
 		(pts
@@ -3543,6 +3625,16 @@
 	)
 	(wire
 		(pts
+			(xy 147.32 66.04) (xy 148.59 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2c737fc-44cd-410b-9303-bb927e6bcb7a")
+	)
+	(wire
+		(pts
 			(xy 134.62 58.42) (xy 152.4 58.42)
 		)
 		(stroke
@@ -3623,6 +3715,16 @@
 	)
 	(wire
 		(pts
+			(xy 168.91 105.41) (xy 168.91 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4ed3980-00e4-4df3-b968-e71d329c781a")
+	)
+	(wire
+		(pts
 			(xy 172.72 123.19) (xy 172.72 68.58)
 		)
 		(stroke
@@ -3663,7 +3765,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 106.68) (xy 168.91 101.6)
+			(xy 168.91 106.68) (xy 168.91 105.41)
 		)
 		(stroke
 			(width 0)
@@ -3680,6 +3782,16 @@
 			(type default)
 		)
 		(uuid "fb6c8000-eea3-4a5a-94a1-7b8706c4f927")
+	)
+	(wire
+		(pts
+			(xy 153.67 86.36) (xy 147.32 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc64e7b3-d6ea-4a68-93fe-96da8707e49f")
 	)
 	(wire
 		(pts
@@ -3762,17 +3874,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 180.34 105.41 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 177.8 102.87 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3effa0d9-a9b2-4eb0-8a88-5ca9f2658a23")
-		(property "Reference" "H6"
-			(at 182.88 104.1399 0)
+		(uuid "25500500-942e-4a34-9765-6a721ee33d7b")
+		(property "Reference" "H2"
+			(at 180.34 100.3299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3780,8 +3891,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingWaveshare"
-			(at 182.88 106.6799 0)
+		(property "Value" "MountingHole_Pad"
+			(at 180.34 102.8699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3790,7 +3901,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad"
-			(at 180.34 105.41 0)
+			(at 177.8 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3799,7 +3910,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 180.34 105.41 0)
+			(at 177.8 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3807,19 +3918,22 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 180.34 105.41 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 177.8 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "9f122feb-5808-4adf-beef-94a90430bce1")
 		)
 		(instances
-			(project "odroid-lora-0"
+			(project "odroid-lora-1"
 				(path "/f77be119-6838-4f09-8633-17bbcd8d00f0"
-					(reference "H6")
+					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -3969,326 +4083,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 105.41 105.41 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "867c71ad-780f-40c6-acd3-a587041ea5c5")
-		(property "Reference" "H2"
-			(at 107.95 104.1399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingOdroid"
-			(at 107.95 106.6799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad"
-			(at 105.41 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 105.41 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 105.41 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "odroid-lora-0"
-				(path "/f77be119-6838-4f09-8633-17bbcd8d00f0"
-					(reference "H2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 105.41 99.06 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "87679600-8435-4907-abe8-f8cd39082fb3")
-		(property "Reference" "H1"
-			(at 107.95 97.7899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingOdroid"
-			(at 107.95 100.3299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad"
-			(at 105.41 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 105.41 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 105.41 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project ""
-				(path "/f77be119-6838-4f09-8633-17bbcd8d00f0"
-					(reference "H1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 180.34 111.76 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8d31fae9-b69d-435f-aa2f-58cbc3099173")
-		(property "Reference" "H7"
-			(at 182.88 110.4899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingWaveshare"
-			(at 182.88 113.0299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad"
-			(at 180.34 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 180.34 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 180.34 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "odroid-lora-0"
-				(path "/f77be119-6838-4f09-8633-17bbcd8d00f0"
-					(reference "H7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 105.41 111.76 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8da20def-8591-40b1-91c7-aa966ba93894")
-		(property "Reference" "H3"
-			(at 107.95 110.4899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingOdroid"
-			(at 107.95 113.0299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad"
-			(at 105.41 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 105.41 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 105.41 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "odroid-lora-0"
-				(path "/f77be119-6838-4f09-8633-17bbcd8d00f0"
-					(reference "H3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 180.34 99.06 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "95910ddc-da99-44f2-b170-23005f10d597")
-		(property "Reference" "H5"
-			(at 182.88 97.7899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingWaveshare"
-			(at 182.88 100.3299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad"
-			(at 180.34 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 180.34 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 180.34 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "odroid-lora-0"
-				(path "/f77be119-6838-4f09-8633-17bbcd8d00f0"
-					(reference "H5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
 		(at 181.61 72.39 90)
 		(unit 1)
@@ -4362,17 +4156,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 180.34 118.11 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 177.8 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b3a7163f-9798-4565-aa82-131afd2f77f4")
-		(property "Reference" "H8"
-			(at 182.88 116.8399 0)
+		(uuid "bd7b0d25-ccfa-40f9-b7b0-492377bed341")
+		(property "Reference" "H1"
+			(at 180.34 92.7099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4380,8 +4174,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingWaveshare"
-			(at 182.88 119.3799 0)
+		(property "Value" "MountingHole_Pad"
+			(at 180.34 95.2499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4390,7 +4184,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad"
-			(at 180.34 118.11 0)
+			(at 177.8 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4399,7 +4193,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 180.34 118.11 0)
+			(at 177.8 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4407,19 +4201,22 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 180.34 118.11 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 177.8 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "3cb2c24d-4203-47f6-8a48-a37500134c2f")
 		)
 		(instances
-			(project "odroid-lora-0"
+			(project ""
 				(path "/f77be119-6838-4f09-8633-17bbcd8d00f0"
-					(reference "H8")
+					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -4608,70 +4405,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 105.41 118.11 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d7b6758f-a5f6-4733-8cb7-f450c0a772ac")
-		(property "Reference" "H4"
-			(at 107.95 116.8399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingOdroid"
-			(at 107.95 119.3799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad"
-			(at 105.41 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 105.41 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 105.41 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "odroid-lora-0"
-				(path "/f77be119-6838-4f09-8633-17bbcd8d00f0"
-					(reference "H4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 105.41 49.53 180)
 		(unit 1)
@@ -4763,7 +4496,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x12_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x12_P2.54mm_Horizontal"
 			(at 116.84 78.74 0)
 			(effects
 				(font
