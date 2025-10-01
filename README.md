@@ -6,15 +6,13 @@ Kicad files for an ODROID H3/H3+ to Raspberry-Pi pin header translator to be use
 * Waveshare SX1268 LoRa schematics: [files.waveshare.com/SX1268_LoRa_HAT_SchDoc.pdf](https://files.waveshare.com/upload/a/af/SX1268_LoRa_HAT_SchDoc.pdf)
 * ODROID H3 schematics: [wiki.odroid.com/odroid-h3/odroid-h3_rev2.0_20220406.pdf](https://wiki.odroid.com/_media/odroid-h3/odroid-h3_rev2.0_20220406.pdf)
 
-![screenshot of kicad](2025-09-29-175246_1920x1200_scrot.png)
+![screenshot of kicad](2025-10-01-182209_1920x1200_scrot.png)
 
-![screenshot of kicad](2025-09-29-174254_1920x1200_scrot.png)
+![screenshot of kicad](2025-10-01-182743_1920x1200_scrot.png)
 
-![screenshot of kicad](2025-09-28-145326_1920x1200_scrot.png)
-
-![screenshot of kicad](2025-09-28-132431_1920x1200_scrot.png)
+![screenshot of kicad](2025-10-01-182815_1920x1200_scrot.png)
 
 
-# LICENSE
+## LICENSE
 
 CC0 - public domain

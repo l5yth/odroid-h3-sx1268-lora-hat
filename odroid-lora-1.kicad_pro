@@ -507,19 +507,15 @@
     "netclass_patterns": [
       {
         "netclass": "Power",
-        "pattern": "GND"
+        "pattern": "/GND"
       },
       {
         "netclass": "Power",
-        "pattern": "+5VA"
+        "pattern": "/5V_RUN_H"
       },
       {
         "netclass": "Power",
-        "pattern": "+5VB"
-      },
-      {
-        "netclass": "Signal",
-        "pattern": "+3V3"
+        "pattern": "/3V_RUN_H"
       }
     ]
   },
